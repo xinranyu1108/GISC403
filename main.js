@@ -60,10 +60,10 @@ const marker1 = L.marker([-43.52996100784076, 172.63834875935058]).addTo(map)
 const marker2 = L.marker([-43.5036591272169, 172.59019528821776]).addTo(map)
     .bindPopup('My home: the place where I live and relax.', { autoPan: false });
 
-const marker4 = L.marker([-43.4920710877524, 172.56538491867016]).addTo(map)
+const marker3 = L.marker([-43.4920710877524, 172.56538491867016]).addTo(map)
 	.bindPopup('Burnside City Fitness: I exercise here regularly for fitness', { autoPan: false });
 
-const marker5 = L.marker([-43.52249095465049, 172.58267360542007]).addTo(map)
+const marker4 = L.marker([-43.52249095465049, 172.58267360542007]).addTo(map)
 	.bindPopup('University of Canterbury: I study here, gaining knowledge and skills. ', { autoPan: false });
 
 
