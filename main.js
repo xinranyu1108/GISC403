@@ -18,7 +18,6 @@ L.Routing.control({
         L.latLng(-43.5036591272169, 172.59019528821776),
         L.latLng(-43.4920710877524, 172.56538491867016),
         L.latLng(-43.52249095465049, 172.58267360542007),
-        L.latLng(-43.53097572150117, 172.59642649682547),
         L.latLng(-43.52996100784076, 172.63834875935058),
 
     ],
@@ -60,9 +59,6 @@ const marker1 = L.marker([-43.52996100784076, 172.63834875935058]).addTo(map)
 
 const marker2 = L.marker([-43.5036591272169, 172.59019528821776]).addTo(map)
     .bindPopup('My home: the place where I live and relax.', { autoPan: false });
-
-const marker3 = L.marker([-43.53097572150117, 172.59642649682547]).addTo(map)
-	.bindPopup('Riccarton Paknsave: I shop here for my daily groceries.', { autoPan: false });
 
 const marker4 = L.marker([-43.4920710877524, 172.56538491867016]).addTo(map)
 	.bindPopup('Burnside City Fitness: I exercise here regularly for fitness', { autoPan: false });
