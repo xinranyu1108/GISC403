@@ -58,20 +58,18 @@ geojsonLayer.addTo(map);
 // This creates a polygon on your map with provided coordinates.  Edit this polygon to create your own polygon somewhere in New Zealand
 // Edit the style of this polygon (see: https://leafletjs.com/reference.html#path)
 const polygon = L.polygon([
-		[-43.498762629644155, 172.58213509759824],
-		[-43.497749230949495, 172.5948806873797],
-		[-43.50406846293235, 172.60221921124662],
-		[-43.50602946940837, 172.59912930646055],
-		[-43.510013540335756, 172.60359250226267],
-		[-43.51228558803316, 172.59492360272395],
-		[-43.509079797306114, 172.59239159741315],
-		[-43.51060490344975, 172.586726771972]
+		[-43.58538204284684, 172.70567627378378],
+		[-43.58484071960974, 172.70910973359443],
+		[-43.589110069040714, 172.7157818954866],
+		[-43.5947081261643, 172.70560711515918]
 	],{
-		color: '#0570b0',
-		weight:3,
+		color: 'orange',
+		weight:4,
 		fillOpacity: 0.5,
-		fillColor: '#0570b0',
-	}).addTo(map).bindPopup("This is Bryndwr, the neighborhood I call home. It's a community rich in friendliness and local charm, making every day here special to me.");
+		fillColor: 'orange',
+	}).addTo(map).bindPopup("Christchurch Gondola: My favorite hiking spot. I visit here occasionally for a good workout or to hang out with friends.")
+
+
 
 
 setTimeout(ReOrder, 1000);
@@ -88,8 +86,10 @@ function ReOrder() {
     [-43.52996100784076, 172.63834875935058]
 
 ];
+    var latlngs2 = [[-43.52996100784076, 172.63834875935058],[-43.58540912503021, 172.70752891400159]]
 
 var polyline = L.polyline(latlngs, {color: '#0570b0'}).addTo(map);
+var polydashedline = L.polyline(latlngs2, {color: 'orange', weight: '3',  dashArray: '8, 8', dashOffset: '0'}).addTo(map);
 
 }
 
